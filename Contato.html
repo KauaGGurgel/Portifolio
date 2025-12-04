@@ -9,27 +9,22 @@
 <body>
 
 <header class="site-header" id="top">
-    <nav class="nav container" aria-label="Navegação principal">
-      
+    <nav class="nav container">
       <a class="brand" href="index.html">Kauã G. Gurgel</a>
-
-      <ul class="nav-list" role="menubar">
-        <li role="none"><a role="menuitem" href="Sobre.html">Sobre</a></li>
-        <li role="none"><a role="menuitem" href="Formacao.html">Formação</a></li>
-        <li role="none"><a role="menuitem" href="Portifolio.html">Portfólio</a></li>
-        <li role="none"><a role="menuitem" href="Contato.html">Contato</a></li>
+      <ul class="nav-list">
+        <li><a href="Sobre.html">Sobre</a></li>
+        <li><a href="Formacao.html">Formação</a></li>
+        <li><a href="Portifolio.html">Portfólio</a></li>
+        <li><a href="Contato.html">Contato</a></li>
       </ul>
-
       <button id="toggle-theme">Mudar Tema</button>
-
     </nav>
 </header>
 
-<section id="contato" class="section container" aria-labelledby="contato-title">
-    <h2 id="contato-title">Contato</h2>
+<section id="contato" class="section container">
+    <h2>Contato</h2>
 
     <form id="form-contato">
-   
         <div class="form-group">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" placeholder="Digite seu nome">
@@ -50,25 +45,23 @@
 
         <button type="submit">Enviar Mensagem</button>
     </form>
-
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <h3 id="modal-title">Mensagem enviada com sucesso!</h3>
-            <p>Obrigado pela mensagem — entrarei em contato em breve.</p>
-            <button id="modal-close">Fechar</button>
-        </div>
-    </div>
-
 </section>
 
-<footer class="site-footer">
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <h3>Mensagem enviada com sucesso!</h3>
+        <p>Obrigado pela mensagem — entrarei em contato em breve.</p>
+        <button id="modal-close">Fechar</button>
+    </div>
+</div>
+
+ <footer class="site-footer">
     <div class="container">
         <p>© <span id="year"></span> Kauã Gonçalves Gurgel</p>
-        <p><a href="#top">Voltar ao topo</a></p>
+        <p><a href="index.html">Voltar ao topo</a></p>
     </div>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>

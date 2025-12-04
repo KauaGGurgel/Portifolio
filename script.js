@@ -102,6 +102,18 @@ if (modalClose) {
     });
 }
 
+document.getElementById("form-contato").addEventListener("submit", function(e){
+    e.preventDefault();
+    document.getElementById("modal").style.display = "flex"; 
+});
+
+document.getElementById("modal-close").addEventListener("click", function(){
+    document.getElementById("modal").style.display = "none"; 
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+document.getElementById("year").textContent = new Date().getFullYear();
 document.addEventListener('keydown', (ev) => {
     const modal = $('#modal');
     if (ev.key === 'Escape' && modal && !modal.hidden) {
@@ -117,7 +129,6 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
         if (target) {
             e.preventDefault();
             target.scrollIntoView({ behavior: 'smooth' });
-            target.focus({ preventScroll: true });
         }
     });
 });
