@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Kauã</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+    <nav class="nav container" aria-label="Navegação principal">
+      
+      <a class="brand" href="index.html">Kauã G. Gurgel</a>
+
+      <ul class="nav-list" role="menubar">
+        <li role="none"><a role="menuitem" href="Sobre.html">Sobre</a></li>
+        <li role="none"><a role="menuitem" href="Formacao.html">Formação</a></li>
+        <li role="none"><a role="menuitem" href="Portifolio.html">Portfólio</a></li>
+        <li role="none"><a role="menuitem" href="Contato.html">Contato</a></li>
+      </ul>
+
+      <button id="toggle-theme">Mudar Tema</button>
+
+    </nav>
+</header>
+
+<section id="contato" class="section container" aria-labelledby="contato-title">
+    <h2 id="contato-title">Contato</h2>
+
+    <form id="form-contato">
+   
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+            <small class="error" id="error-nome"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="seuemail@exemplo.com">
+            <small class="error" id="error-email"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" rows="5" placeholder="Digite sua mensagem..."></textarea>
+            <small class="error" id="error-mensagem"></small>
+        </div>
+
+        <button type="submit">Enviar Mensagem</button>
+    </form>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h3 id="modal-title">Mensagem enviada com sucesso!</h3>
+            <p>Obrigado pela mensagem — entrarei em contato em breve.</p>
+            <button id="modal-close">Fechar</button>
+        </div>
+    </div>
+
+</section>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© <span id="year"></span> Kauã Gonçalves Gurgel</p>
+        <p><a href="#top">Voltar ao topo</a></p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
