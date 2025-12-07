@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <!-- Configurações básicas da página -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Kauã</title>
+
+  <title>Portfólio - Kauã Gonçalves Gurgel</title>
+
+  <!-- Importa o CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!--CABEÇALHO / MENU FIXO-->
 <header class="site-header" id="top">
     <nav class="nav container" aria-label="Navegação principal">
-        <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="nav-list">
-        ☰
-      </button>
       
+      <!-- Nome que funciona como link para tela inicial -->
       <a class="brand" href="index.html">Kauã G. Gurgel</a>
 
+      <!-- Menu de navegação -->
       <ul class="nav-list" role="menubar">
         <li role="none"><a role="menuitem" href="Sobre.html">Sobre</a></li>
         <li role="none"><a role="menuitem" href="Formacao.html">Formação</a></li>
@@ -23,46 +27,61 @@
         <li role="none"><a role="menuitem" href="Contato.html">Contato</a></li>
       </ul>
 
+      <!-- Botão que troca tema claro/escuro -->
       <button id="toggle-theme">Mudar Tema</button>
 
     </nav>
 </header>
 
-    <main>
-        <section id="portfolio" class="section">
-            <div class="container">
-                <h2>Portfólio</h2>
+<!--PORTFÓLIO-->
+<main>
+    <section id="portfolio" class="section">
+        <div class="container">
 
-                <div class="portfolio-grid">
-                    <article class="card">
-                        <h3>Projeto 1: Site Institucional</h3>
-                        <p>Site desenvolvido com HTML, CSS e JavaScript.</p>
-                    <a
-                     href="https://drive.google.com/drive/folders/16MjzqAT9rwEq9lLbTMIGJaT7DTL9IUx6?usp=sharing"
-                     target="_blank" >  Ver Trabalho Completo em PDF
-                    </a>
-                        <h3>Projeto 2: Treinando uma inteligência Artificial</h3>
-                        <p>Site Desenvolvido em excel</p>
-                    <a
-                    href="https://alunouninter-my.sharepoint.com/:x:/p/5203853/IQDjDVRDpag6Q7W0iPs7-xIpATc8-lVCJYgMGRlMuLWh-j8?e=6EQail"
-                     target="_blank" >  Ver Trabalho Completo em excel
-                    </a>
+            <h2>Portfólio</h2>
 
-                </div>
+            <!-- Grade de cards dos projetos -->
+            <div class="portfolio-grid">
+
+                <!--CARD 1-->
+                <article class="card">
+                    <h3>Projeto 1: Site Institucional</h3>
+                    <p>Site desenvolvido com HTML, CSS e JavaScript.</p>
+
+                    <!-- Link abrindo em nova aba -->
+                    <a href="https://drive.google.com/drive/folders/16MjzqAT9rwEq9lLbTMIGJaT7DTL9IUx6?usp=sharing"
+                       target="_blank">
+                        Ver Trabalho Completo em PDF
+                    </a>
+                </article>
+
+                <!--CARD 2-->
+                <article class="card">
+                    <h3>Projeto 2: Treinando uma Inteligência Artificial</h3>
+                    <p>Projeto desenvolvido utilizando Excel.</p>
+
+                    <!-- Link do Excel abrindo em nova aba -->
+                    <a href="https://alunouninter-my.sharepoint.com/:x:/p/5203853/IQDjDVRDpag6Q7W0iPs7-xIpATc8-lVCJYgMGRlMuLWh-j8?e=6EQail"
+                       target="_blank">
+                        Ver Trabalho Completo em Excel
+                    </a>
+                </article>
+
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+</main>
 
-     <footer class="site-footer">
+<!--RODAPÉ-->
+<footer class="site-footer">
     <div class="container">
         <p>© <span id="year"></span> Kauã Gonçalves Gurgel</p>
-        <p><a href="index.html">Voltar ao topo</a></p>
+
+        <p><a href="#top">Voltar ao topo</a></p>
     </div>
 </footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
-
-

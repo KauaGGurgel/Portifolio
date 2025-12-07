@@ -3,35 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato - Kauã</title>
+  <title>Contato - Kauã Gonçalves Gurgel</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="site-header" id="top">
-    <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="nav-list">
-        ☰
-      </button>
+<header class="site-header" id="top"> <!-- Cabeçalho fixo no topo -->
+
     <nav class="nav container">
       <a class="brand" href="index.html">Kauã G. Gurgel</a>
-      <ul class="nav-list">
-        <li><a href="Sobre.html">Sobre</a></li>
+
+      <ul class="nav-list"> <!-- Lista de navegação -->
+        <li><a href="Sobre.html">Sobre</a></li> 
         <li><a href="Formacao.html">Formação</a></li>
         <li><a href="Portifolio.html">Portfólio</a></li>
-        <li><a href="Contato.html">Contato</a></li>
-      </ul>
-      <button id="toggle-theme">Mudar Tema</button>
+        <li><a href="Contato.html">Contato</a></li> 
+
+      <button id="toggle-theme">Mudar Tema</button> <!-- Botão para trocar tema claro/escuro -->
     </nav>
 </header>
 
-<section id="contato" class="section container">
+<section id="contato" class="section container"> <!-- Seção principal da página -->
     <h2>Contato</h2>
 
+    <!-- Formulário de contato -->
     <form id="form-contato">
+
         <div class="form-group">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" placeholder="Digite seu nome">
-            <small class="error" id="error-nome"></small>
+            <small class="error" id="error-nome"></small> <!-- Mensagem de erro -->
         </div>
 
         <div class="form-group">
@@ -46,25 +47,26 @@
             <small class="error" id="error-mensagem"></small>
         </div>
 
-        <button type="submit">Enviar Mensagem</button>
+        <button type="submit">Enviar Mensagem</button> <!-- Botão do formulário -->
     </form>
 </section>
 
+<!-- Modal que aparece quando o formulário é enviado -->
 <div id="modal" class="modal">
     <div class="modal-content">
         <h3>Mensagem enviada com sucesso!</h3>
         <p>Obrigado pela mensagem — entrarei em contato em breve.</p>
-        <button id="modal-close">Fechar</button>
+        <button id="modal-close">Fechar</button> <!-- Fecha o modal -->
     </div>
 </div>
 
- <footer class="site-footer">
+<footer class="site-footer"> <!-- Rodapé -->
     <div class="container">
-        <p>© <span id="year"></span> Kauã Gonçalves Gurgel</p>
+        <p>© <span id="year"></span> Kauã Gonçalves Gurgel</p> <!-- Ano gerado pelo JS -->
         <p><a href="index.html">Voltar ao topo</a></p>
     </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js"></script> <!-- Carrega seu JavaScript -->
 </body>
 </html>
