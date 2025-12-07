@@ -132,3 +132,17 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
         }
     });
 });
+
+/* --- Lógica do Menu Hambúrguer --- */
+const menuToggle = $('menu-toggle');
+const navList = $('nav-list');
+
+if (menuToggle && navList) {
+    menuToggle.addEventListener('click', () => {
+        navList.classList.toggle('active');
+        
+        // Acessibilidade: atualiza o atributo para leitores de tela
+        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', !expanded);
+    });
+}
